@@ -4,7 +4,7 @@ import Center from "./Center";
 
 const HeaderStyles = styled.header`
   background-color: #fff;
-  boarder-bottom: 1px solid #eee;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
 `;
 
 const Logo = styled(Link)`
