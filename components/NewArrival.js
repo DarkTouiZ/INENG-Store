@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Center from "./Center";
+import Card from "./Card";
 
 const Bg = styled.div`
   background-color: #fff;
@@ -32,18 +33,7 @@ export default function NewArrival() {
       <Center>
         <h1>New Arrival</h1>
         <ProductGrid>
-          <div>
-            <img src="/Assets/Limited/BlackFront.jpg" alt="STAR WARS shirt" />
-            <h1>Colors</h1>
-            <h1>Sex</h1>
-            <Desc>
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              euismod, nisl nec ultrices tincidunt, massa nisl eleifend eros,
-              vel luctus eros lorem sit amet diam. Nulla facilisi. Sed ut nunc
-              eget magna tincidunt ullamcorper.
-            </Desc>
-            <p>See More</p>
-          </div>
+          <Card />
           <div>
             <img src="/Assets/Limited/BossFront.jpg" alt="STAR WARS shirt" />
             <h1>Colors</h1>
