@@ -44,6 +44,11 @@ const ButtonWrapper = styled.div`
     margin: 25px 0;
 `;
 
+const FeaturedWrapper = styled.div`
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+`;
 export default function Featured() {
   return (
     <Bg>
@@ -65,7 +70,7 @@ export default function Featured() {
         </ButtonWrapper>
         
         
-        <div >
+        <FeaturedWrapper >
           <Title>Featured</Title>
           <Desc>
             lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -78,7 +83,11 @@ export default function Featured() {
             eros non lectus. Sed aliquam, nunc eget ultricies ullamcorper, diam
             felis mollis nisi,
           </Desc>
-        </div>
+        </FeaturedWrapper>
+
+        <img src="HolidayPic.svg" alt="Promotion" />
+        <img src="BlackFriday.svg" alt="Promotion" />
+        
       </Center>
     </Bg>
   );
