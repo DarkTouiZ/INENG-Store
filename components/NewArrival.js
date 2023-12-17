@@ -34,30 +34,8 @@ export default function NewArrival() {
         <h1>New Arrival</h1>
         <ProductGrid>
           <Card />
-          <div>
-            <img src="/Assets/Limited/BossFront.jpg" alt="STAR WARS shirt" />
-            <h1>Colors</h1>
-            <h1>Sex</h1>
-            <Desc>
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              euismod, nisl nec ultrices tincidunt, massa nisl eleifend eros,
-              vel luctus eros lorem sit amet diam. Nulla facilisi. Sed ut nunc
-              eget magna tincidunt ullamcorper.
-            </Desc>
-            <p>See More</p>
-          </div>
-          <div>
-            <img src="/Assets/Limited/OrangeFront.jpg" alt="STAR WARS shirt" />
-            <h1>Colors</h1>
-            <h1>Sex</h1>
-            <Desc>
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              euismod, nisl nec ultrices tincidunt, massa nisl eleifend eros,
-              vel luctus eros lorem sit amet diam. Nulla facilisi. Sed ut nunc
-              eget magna tincidunt ullamcorper.
-            </Desc>
-            <p>See More</p>
-          </div>
+          <Card />
+          <Card />
         </ProductGrid>
       </Center>
     </Bg>
