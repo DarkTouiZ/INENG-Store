@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import Color from './Color';
+import Color from './ModelContrainer';
 
 
 export default function Card(){
