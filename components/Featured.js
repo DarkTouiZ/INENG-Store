@@ -2,7 +2,7 @@ import React from "react";
 import Center from "./Center";
 import styled from "styled-components";
 import Button from "./Button";
-import Image from "next/image";
+import { useRouter } from 'next/router';
 
 const Bg = styled.div`
   background-color: #fff;
@@ -50,23 +50,30 @@ const FeaturedWrapper = styled.div`
     margin: 30px 0;
 `;
 export default function Featured() {
+  const router = useRouter();
+
+  const handleBuyNow = () => {
+    // Perform any additional logic before navigating to the cart page
+    // For now, let's just navigate to the '/cart' route
+    router.push('/cart');
+  };
   return (
     <Bg>
       <Center>
         <h1>Best Seller</h1>
         <Wrapper>
           <div>
-            <img src="/Assets/Limited/STARWARSLogoFront.jpg" alt="STAR WARS shirt"/>
+            <img src="/Assets/StarWars/STARWARSLogoFront.jpg" alt="STAR WARS shirt"/>
           </div>
           <div>
-            <img src="/Assets/Limited/DarthVaderFront.jpg" alt="STAR WARS shirt" />
+            <img src="/Assets/StarWars/DarthVaderFront.jpg" alt="STAR WARS shirt" />
           </div>
           <div>
-            <img src="/Assets/Limited/SpaceshipFront.jpg" alt="STAR WARS shirt" />
+            <img src="/Assets/StarWars/SpaceshipFront.jpg" alt="STAR WARS shirt" />
           </div>
         </Wrapper>
         <ButtonWrapper>
-          <Button >Buy Now</Button>
+          <Button onClick={handleBuyNow} primary>Buy Now</Button>
         </ButtonWrapper>
         
         
