@@ -36,13 +36,8 @@ export default function NewArrival() {
       <Center>
         <h1>New Arrival</h1>
         <ProductGrid>
-          {newProducts.map((product) => (
-            <Card
-              key={product.id}
-              imageUrl={product.images?.frontView?.[0] || "../Asset/Formal/BkFront.jpg"}
-              color="#FF0000"
-              description={product.description}
-            />
+          {newProducts.map((p) => (
+            <Card key={p.id} productId={p.id} />
           ))}
         </ProductGrid>
       </Center>

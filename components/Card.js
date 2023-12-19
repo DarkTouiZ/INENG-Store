@@ -2,49 +2,35 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
-import ModelContainer from './ModelContainer';
+import ModelSelect from './ModelSelect';
+import { product } from '../Content/Product'; // Import your product data
 
 const StyledCard = styled.div`
-  border: 1px solid #ddd;
   padding: 20px;
 `;
 
-const ModelSwatches = styled.div`
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-`;
-
-const Swatch = styled.div`
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: ${(props) => props.color};
-  cursor: pointer;
-`;
-
-export default function Card({ imageUrl, models = [], description }) {
-  const [selectedModel, setSelectedModel] = useState(models.length > 0 ? models[0] : null);
+export default function Card({ productId }) {
+  const [selectedModel, setSelectedModel] = useState(product[productId]?.model[0]); // Set initial model
 
   const handleModelChange = (model) => {
     setSelectedModel(model);
   };
 
+  // Get the product data based on productId
+  const currentProduct = product.find((p) => p.id === productId);
+
+  // Get the front view image URL based on the selected model
+  const frontImageUrl = currentProduct?.images?.frontView.find((img) => img.includes(selectedModel));
+
   return (
     <StyledCard>
-      <Image src={imageUrl} width={300} height={300} />
-      <ModelSwatches>
-        {models.map((model) => (
-          <Swatch
-            key={model}
-            color={model}
-            onClick={() => handleModelChange(model)}
-            style={{ border: model === selectedModel ? '2px solid #000' : 'none' }}
-          />
-        ))}
-      </ModelSwatches>
-      <ModelContainer model={selectedModel || ''} />
-      <p>{description}</p>
+      <Image src={frontImageUrl} width={300} height={300} />
+      <ModelSelect
+        models={currentProduct?.model}
+        selectedModel={selectedModel}
+        onChange={handleModelChange}
+      />
+      <p>{currentProduct?.description}</p>
     </StyledCard>
   );
 }

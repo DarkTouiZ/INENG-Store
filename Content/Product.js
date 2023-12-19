@@ -13,18 +13,18 @@ export const product = [
         ],
         images: {
             frontView: [
+                '/Assets/Formal/McFront.jpg',
                 '/Assets/Formal/BkFront.jpg',
                 '/Assets/Formal/KFCFront.jpg',
-                '/Assets/Formal/McFront.jpg',
-                '/Assets/Formal/StarbuckFront.jpg',
                 '/Assets/Formal/LoonyFront.jpg',
+                '/Assets/Formal/StarbuckFront.jpg',
             ],
             backView: [
+                '/Assets/Formal/McBack.jpg',
                 '/Assets/Formal/BkBack.jpg',
                 '/Assets/Formal/KFCBack.jpg',
-                '/Assets/Formal/McBack.jpg',
-                '/Assets/Formal/StarbuckBack.jpg',
                 '/Assets/Formal/LoonyBack.jpg',
+                '/Assets/Formal/StarbuckBack.jpg',
             ],
         },
     },
