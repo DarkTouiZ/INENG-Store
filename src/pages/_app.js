@@ -2,11 +2,11 @@ import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  import url('https://fontsgeek.com/fonts/Bahnschrift-Regular');
   * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'bahnschrift', sans-serif;
   }
 `;
 

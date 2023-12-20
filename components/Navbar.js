@@ -4,10 +4,9 @@ import Center from "./Center";
 
 const StyledHeader = styled.header`
     background-color: #222;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 `;
 const Logo = styled(Link)`
-    color: #fff;
+    color: #282828;
     text-decoration: none;
 `;
 const Wrapper = styled.div`
@@ -54,7 +53,7 @@ export default function Nav() {
                             WOMEN
                         </Navlink>
                         <Navlink href={'/'}>
-                            AII
+                            AI
                         </Navlink>
                         <Navlink href={'/cart'}>
                             <Icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

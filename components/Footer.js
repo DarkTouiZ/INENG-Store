@@ -3,6 +3,7 @@ import Center from "./Center";
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
 
+
 const FooterBG = styled.div`
   background-color: #000;
   color: #fff;
@@ -106,7 +107,7 @@ export default function Footer() {
           <FooterTopic>
             
             <FooterSubtopics>
-            <p>Collection</p>
+            <h3>Collection</h3>
               <FooterSubtopic>
                 <p>Formal</p>
               </FooterSubtopic>
@@ -130,7 +131,7 @@ export default function Footer() {
           <FooterTopic>
             
             <FooterSubtopics>
-            <p>Help</p>
+            <h3>Help</h3>
               <FooterSubtopic>
                 <p>Customer Services</p>
               </FooterSubtopic>
@@ -142,7 +143,7 @@ export default function Footer() {
           <FooterTopic>
             
             <FooterSubtopics>
-            <p>About Us</p>
+            <h3>About Us</h3>
               <FooterSubtopic>
                 <p>iNeng Lab</p>
               </FooterSubtopic>
