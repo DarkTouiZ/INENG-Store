@@ -4,16 +4,6 @@ body{
     overflow-x: hidden;
 }
 /*end-background*/
-.view-all::before {
-    content: "View all";
-    color: black;
-    font-size: 6vh;
-    font-weight: 100;
-    font-family: Bahnschrift;
-    top: 23vh;
-    left: 21vw;
-    position: absolute;
-}
 
 /*navbar*/
 
@@ -23,15 +13,17 @@ body{
     width: 100vw;
     margin: 0;
     padding: 0;
-    background-color: #222;
+    background-color: white;
+    box-shadow: 0 0.3vh 2vh 0 rgba(0,0,0,0.2);
   }
   .ineng{
     top: 1.5vh;
     left: 10vw;
     vertical-align: bottom;
     position: absolute;
-    color: white;
+    color: #222;
     font-size: 4vh;
+    cursor: pointer;
     font-weight: 600;
     font-family: Bahnschrift;
 }
@@ -40,7 +32,7 @@ body{
     left: 21vw;
     vertical-align: bottom;
     position: absolute;
-    color: white;
+    color: #222;
     font-size: 4vh;
     font-weight: 100;
     font-family: Bahnschrift;
@@ -59,11 +51,12 @@ body{
 }
 
 .home:hover{
-    color: #ffffff;
+    color: black;
 }
 .logo{
     scale: 80%;
     position: absolute;
+    cursor: pointer;
     top: 5vh;
     left: 85vw;
 }
@@ -82,6 +75,19 @@ body{
 }
 
 
+
+
+
+.view-all::before {
+    content: "View all";
+    color: black;
+    font-size: 6vh;
+    font-weight: 100;
+    font-family: Bahnschrift;
+    top: 23vh;
+    left: 21vw;
+    position: absolute;
+}
 .view-all-line::before{
     content: "View dadalldwadadaddadwdadadadsdad";
     color: transparent;
