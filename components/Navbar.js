@@ -4,6 +4,7 @@ import Center from "./Center";
 
 const StyledHeader = styled.header`
     background-color: #222;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
 `;
 const Logo = styled(Link)`
     color: #fff;

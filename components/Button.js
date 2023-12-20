@@ -6,8 +6,10 @@ const StyledBtn = styled.button`
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    box-shadow: 0 2px 5px #ccc;
     &:hover {
         background-color: #383838;
+        
     }
     ${props => props.block && css `
     display: block;
