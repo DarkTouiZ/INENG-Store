@@ -22,7 +22,7 @@ const StyledNav = styled.nav`
     gap: 30px;
 `;
 const Navlink = styled(Link)`
-    color: #aaa;
+    color: #686868;
     text-decoration: none;
 `;
 const Icon = styled.svg`
@@ -44,7 +44,6 @@ export default function Nav() {
                     <Logo href={'/'}>
                         <h1>iNeng Store</h1>
                     </Logo>
-                    <SearchBar type="text" placeholder="Search" />
                     <StyledNav>
                         <Navlink href={'/'}>
                             MEN
