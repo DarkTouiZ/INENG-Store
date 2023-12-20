@@ -1,0 +1,355 @@
+/*background*/
+body{
+    background: white;
+    overflow-x: hidden;
+}
+/*end-background*/
+.view-all::before {
+    content: "View all";
+    color: black;
+    font-size: 6vh;
+    font-weight: 100;
+    font-family: Bahnschrift;
+    top: 23vh;
+    left: 21vw;
+    position: absolute;
+}
+.view-all-line::before{
+    content: "View dadalldwadadaddadwdadadadsdad";
+    color: transparent;
+    text-decoration: underline grey 0.2vh;
+    font-size: 8vh;
+    font-weight: lighter;
+    font-family: Trebuchet,sans-serif;
+    top: 21.2vh;
+    left: 21vw;
+    position: absolute;
+}
+/*grid-container*/
+.container {
+    position: relative;
+    top: 34vh;
+    left: 22vw;
+    display: grid;
+    grid-gap: 5px;
+    min-width: 0vw;
+    min-height: 0vh;
+    grid-template-rows: repeat(4,70vh);
+    grid-template-columns: repeat(3,20vw);
+    background-color: transparent;
+}
+.filter-item {
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.5s;
+  }
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    ro{
+        opacity: 1;
+    }
+}
+.filter-item img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+.product-info {
+    font-family: Bahnschrift;
+    height: 25%;
+}
+
+.prod-name{
+    font-size: 2vh;
+    position: relative;
+    text-align: left;
+}
+
+.prod-price{
+    font-size: 2vh;
+    position: relative;
+    text-align: right;
+    right: 1vw;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.prod-price:hover{
+    scale: 105%;
+    color: red;
+}
+
+.clr-prod-price{
+    font-size: 2vh;
+    position: relative;
+    text-align: right;
+    right: 2vh;
+    top:-4vh;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.clr-prod-price:hover{
+    scale: 105%;
+    color: red;
+}
+
+.top-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.top-image:hover {
+    opacity: 0;
+}
+  /*end-grid-container*/
+
+.btn-change{
+    left: 0;
+    top: -2vh;
+    position: relative;
+    display: flex;
+}
+
+.btn-change button{
+    border: 0;
+    position: relative;
+    width: 1vw;
+    height: 2.2vh;
+    margin: 0.25vh;
+    border-radius: 70px;
+}
+
+
+/*color-pallet*/
+.loon{
+    background: black;
+}
+
+.kings{
+    background-color: blue;
+}
+
+.kfc{
+    background-color: red;
+}
+
+.minions{
+    background-color: yellow;
+}
+
+.mc{
+    background-color: navy;
+}
+
+.stars{
+    background-color: green;
+}
+
+.wine{
+    background: #4E0707;
+}
+
+.seaweed{
+    background: #354A21;
+}
+
+.pink{
+    background: pink;
+}
+/*end-color-palette*/
+
+/*filter*/
+
+.catagories{
+    position: fixed;
+    font-size: 3vh;
+    font-family: Bahnschrift;
+}
+/*Series*/
+.series{
+    top: 23vh;
+    left: 8vw;
+}
+.container-Collection {
+    position: fixed;
+    top: 30vh;
+    left: 8vw;
+    display: grid;
+    grid-template-rows: repeat(8,3vh);
+    grid-template-columns: repeat(1,10vw);
+    background-color: transparent;
+}
+.btn-colfilter{
+    text-align: left;
+    font-size: 2vh;
+    font-family: Bahnschrift;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: grey;
+    transition: all 0.3s;
+}
+.btn-colfilter:hover{
+    color: black;
+}
+
+.active-btn{
+    color: black;
+    scale: 110%;
+}
+.active-btn::after{
+    color: black;
+}
+
+/*Colors*/
+.colors{
+    top: 52vh;
+    left: 8vw;
+}
+.container-Color{
+    position: fixed;
+    top: 59vh;
+    left: 8vw;
+    display: grid;
+    grid-template-rows: repeat(2,3vh);
+    grid-template-columns: repeat(5,1.3vw);
+    background-color: transparent;
+}
+.btn-clrfilter{
+    border-color: transparent;
+    position: relative;
+    width: 1.1vw;
+    height: 2.5vh;
+    margin: 0.25vh;
+    border-radius: 20vh;
+    transition: all 0.3s;
+}
+.btn-clrfilter:hover{
+    border-color: black;
+    scale: 120%;
+}
+
+/*Size*/
+.size{
+    top: 64vh;
+    left: 8vw;
+}
+.container-Size{
+    position: fixed;
+    top: 71vh;
+    left: 8vw;
+    display: grid;
+    grid-template-rows: repeat(2,3.5vh);
+    grid-template-columns: repeat(4,2vw);
+    background-color: transparent;
+}
+.btn-sizefilter{
+    border-color: transparent;
+    position: relative;
+    font-size: 1.5vh;
+    width: 2vw;
+    height: 3.3vh;
+    margin: 0.25vh;
+    border-radius: 20%;
+    transition: all 0.3s;
+}
+.btn-sizefilter:hover{
+    border-color: black;
+    scale: 105%;
+}
+
+/*Pricing*/
+.price{
+    top: 77vh;
+    left: 8vw;
+}
+.container-Price{
+    position: fixed;
+    top: 84vh;
+    left: 8vw;
+    display: grid;
+    grid-template-rows: repeat(4,3vh);
+    grid-template-columns: repeat(1,10vw);
+    background-color: transparent;
+}
+.btn-pricefilter{
+    text-align: left;
+    font-size: 2vh;
+    font-family: Bahnschrift;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: grey;
+    transition: all 0.3s;
+}
+.btn-pricefilter:hover{
+    color: black;
+}
+
+/*sorting button*/
+/*arrow*/
+.sorting{
+    position: absolute;
+    top: 30vh;
+    left: 80vw;
+    justify-content: space-between;
+    border: none;
+    cursor: pointer;
+    width: 4.5vw;
+    height: 2vh;
+}
+.sorting .arrow {
+    text-align: right;
+    vertical-align: text-top;
+    border: solid grey;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.sorting .btn-sort{
+    text-align: left;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    font-size: 2.5vh;
+    color: grey;
+}
+/*sort dropdown*/
+  .sort-content {
+    display: none;
+    position: absolute;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: grey;
+    background-color: #ffffff;
+    width: 10vw;
+    height: 12vh;
+    box-shadow: 0 2vh 4vh 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .sorting:hover .sort-content {
+    display: block;
+    position: absolute;
+    
+  }
+  .prcasc{
+    transition: all 0.3s;
+  }
+  .prcdesc{
+    transition: all 0.3s;
+  }
+  .prcasc:hover{
+    color: #000;
+  }
+  .prcdesc:hover{
+    color: #000;
+  }
+
+/*End filter*/
