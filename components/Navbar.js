@@ -46,7 +46,7 @@ export default function Nav() {
                         <h1>iNeng Store</h1>
                     </Logo>
                     <StyledNav>
-                        <Navlink href={'/'}>
+                        <Navlink href="https://all-product-c95db.web.app/">
                             All Products
                         </Navlink>
                         <Navlink href={'/cart'}>
