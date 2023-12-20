@@ -3,10 +3,11 @@ import styled from "styled-components";
 import Center from "./Center";
 
 const StyledHeader = styled.header`
-    background-color: #222;
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
 `;
 const Logo = styled(Link)`
-    color: #fff;
+    color: #282828;
     text-decoration: none;
 `;
 const Wrapper = styled.div`
