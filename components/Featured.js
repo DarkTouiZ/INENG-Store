@@ -55,7 +55,7 @@ export default function Featured() {
   const handleBuyNow = () => {
     // Perform any additional logic before navigating to the cart page
     // For now, let's just navigate to the '/cart' route
-    router.push('/cart');
+    router.push('https://product-details-ca6b0.web.app/');
   };
   return (
     <Bg>
