@@ -25,6 +25,13 @@ const StyledNav = styled.nav`
 const Navlink = styled(Link)`
     color: #686868;
     text-decoration: none;
+    font-size: 1.2rem;
+    &:hover {
+        color: #323232;
+    }
+
+
+
 `;
 const Icon = styled.svg`
     height: 24px;
