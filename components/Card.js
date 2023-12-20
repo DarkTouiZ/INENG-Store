@@ -52,7 +52,7 @@ export default function Card({ productId }) {
           justifyContent: "center",
           display: "flex",
         }}
-        href={`https://product-details-ed195.web.app/`}
+        href={`https://product-details-ca6b0.web.app/`}
       >
         - More Details -
       </Link>

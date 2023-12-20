@@ -2,6 +2,7 @@ import Nav from "../../components/Navbar";
 import Center from "../../components/Center";
 import styled from "styled-components";
 import Button from "../../components/Button";
+import { useRouter } from 'next/router';
 
 // import Nav from "@/components/Navbar";
 // import Center from "@/components/Center";
@@ -80,6 +81,13 @@ const Icon = styled.svg`
 `;
 
 export default function CartPage() {
+    const router = useRouter();
+
+    const handleContinueShop = () => {
+    // Perform any additional logic before navigating to the cart page
+    // For now, let's just navigate to the '/cart' route
+    router.push('/');
+    };
     return (
         <>
             <Nav />
@@ -170,7 +178,7 @@ export default function CartPage() {
             </div>
             <CheckOutBox>
                 <Column>
-                    <Button size={'l'} style={ContShopBtn} >Continue Shopping</Button>
+                    <Button size={'l'} style={ContShopBtn} onClick={handleContinueShop}>Continue Shopping</Button>
                 </Column>
                 <Column>
                     <Button size={'l'} >Clear</Button>
