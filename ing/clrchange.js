@@ -69,6 +69,3 @@ function scroller() {
   function redirectToOtherWebsite2() {
     window.location.href = 'https://ineng-store.vercel.app/cart';
   }
-  function redirectToOtherWebsite3() {
-    window.location.href = 'https://product-details-ed195.web.app/';
-  }
