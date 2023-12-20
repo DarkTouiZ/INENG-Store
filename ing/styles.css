@@ -14,6 +14,74 @@ body{
     left: 21vw;
     position: absolute;
 }
+
+/*navbar*/
+
+.rectangle {
+    position: absolute;
+    height: 11.5vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+  }
+  .ineng{
+    top: 1.5vh;
+    left: 10vw;
+    vertical-align: bottom;
+    position: absolute;
+    color: white;
+    font-size: 4vh;
+    font-weight: 600;
+    font-family: Bahnschrift;
+}
+.see{
+    top: 1.5vh;
+    left: 21vw;
+    vertical-align: bottom;
+    position: absolute;
+    color: white;
+    font-size: 4vh;
+    font-weight: 100;
+    font-family: Bahnschrift;
+}
+.home{
+    top: 3.4vh;
+    left: 79vw;
+    vertical-align: bottom;
+    position: absolute;
+    color: grey;
+    font-size: 3vh;
+    font-weight: 100;
+    font-family: Bahnschrift;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.home:hover{
+    color: #ffffff;
+}
+.logo{
+    scale: 80%;
+    position: absolute;
+    top: 5vh;
+    left: 85vw;
+}
+
+.imposter{
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 5.2vh;
+    left: 86vw;
+    width: 2.4vw;
+    height: 4.3vh;
+    margin: 0.25vh;
+    transition: all 0.3s;
+}
+
+
 .view-all-line::before{
     content: "View dadalldwadadaddadwdadadadsdad";
     color: transparent;
