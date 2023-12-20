@@ -64,3 +64,9 @@ function resetActiveBtn()
 function scroller() {
     document.documentElement.scrollTop = 0;
   };
+function redirectToOtherWebsite1() {
+    window.location.href = 'https://ineng-store.vercel.app/';
+  }
+  function redirectToOtherWebsite2() {
+    window.location.href = 'https://ineng-store.vercel.app/cart';
+  }
