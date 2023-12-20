@@ -1,11 +1,14 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components"; // Added import for 'css'
 
-const StyledButton = styled.button`
-    border: 0;
-    padding: 5px 15px;
+const StyledBtn = styled.button`
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-
+    font-size: 1rem;
+    &:hover {
+        background-color: #383838;
+    }
     ${props => props.block && css `
     display: block;
     width: 100%;
@@ -39,8 +42,10 @@ const StyledButton = styled.button`
     `}
 `;
 
-export default function Button({children,...rest}) {
+export default function Button({ children , ...rest}){
     return (
-        <StyledButton {...rest}>{children}</StyledButton>
-    );
+        <StyledBtn {...rest}>
+            {children}
+        </StyledBtn>
+    )
 }

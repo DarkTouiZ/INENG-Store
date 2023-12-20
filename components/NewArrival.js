@@ -1,6 +1,8 @@
+// NewArrival.js
 import styled from "styled-components";
 import Center from "./Center";
 import Card from "./Card";
+import { product } from "../Content/Product";
 
 const Bg = styled.div`
   background-color: #fff;
@@ -28,14 +30,15 @@ const Desc = styled.p`
 `;
 
 export default function NewArrival() {
+  const newProducts = product.slice(0, 3);
   return (
     <Bg>
       <Center>
         <h1>New Arrival</h1>
         <ProductGrid>
-          <Card />
-          <Card />
-          <Card />
+          {newProducts.map((p) => (
+            <Card key={p.id} productId={p.id} />
+          ))}
         </ProductGrid>
       </Center>
     </Bg>
