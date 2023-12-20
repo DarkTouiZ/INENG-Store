@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="styles.css" />
+    <body>
+      <p class="view-all"></p>
+      <p class="view-all-line"></p>
+      <div class="sorting">
+        <span class="btn-sort">SORT</span>
+        <div class="sort-content">
+            <p class="prcasc">Sort by Price (asc)</p>
+            <p class="prcdesc">Sort by Price (desc)</p>
+        </div>
+        <span class="arrow"></span>
+      </div>
+<!--Product-->
+      <div class="container">
+            <div class="filter-item all joy pk XL 200">
+                    <img src="pink-shirt-1.jpg" />
+                    <img class="top-image" src="pink-t-shirt-model.jpg" />
+                <div class="product-info">
+                    <p class="prod-name">I-NENG Joy</p>
+                    <p class="prod-price">199-</p>
+                </div>
+             </div>
+            <div class="filter-item all formal bk M 300">
+                    <img src="black-t-shirt-model.jpg" />
+                    <img class="top-image" src="black-shirt-1.jpg" />
+                 <div class="product-info">
+                    <p class="prod-name">I-NENG Formal</p>
+                    <p class="prod-price">239-</p>
+                </div>
+            </div>
+             <div class="filter-item all og bk L 300">
+                    <img src="black-sweater-1.jpg" />
+                    <img class="top-image" src="black-sweater-model.jpg" />
+                 <div class="product-info">
+                    <p class="prod-name">I-NENG Original</p>
+                    <p class="prod-price">499-</p>
+                </div>
+            </div>
+            <div class="filter-item all 23 bk bl rd nv gr yl S 200">
+                <img id ="clr" src="23-looneytoons.jpg" />
+             <div class="product-info">
+                <p class="prod-name">I-NENG 2023's</p>
+                <div class="btn-change">
+                    <button class= "loon" onclick="changeColour1()"></button>
+                    <button class = "kings" onclick="changeColour2()"></button>
+                    <button class = "kfc" onclick="changeColour3()"></button>
+                    <button class= "minions" onclick="changeColour4()"></button>
+                    <button class = "mc" onclick="changeColour5()"></button>
+                    <button class = "stars" onclick="changeColour6()"></button>
+                </div>
+                <p class="clr-prod-price">199-</p>
+             </div>
+            </div>
+            <div class="filter-item all starwars sw 2XL 300">
+                <img src="green-hoodie-1.jpg" />
+                <img class="top-image" src="green-hoodie-model-1.jpg" />
+             <div class="product-info">
+                <p class="prod-name">I-NENG Starwars</p>
+                <p class="prod-price">499-</p>
+             </div>
+            </div>
+            <div class="filter-item all joy pk XL 100">
+                <img src="pink-shirt-1.jpg" />
+                <img class="top-image" src="pink-t-shirt-model.jpg" />
+            <div class="product-info">
+                <p class="prod-name">I-NENG Joy</p>
+                <p class="prod-price">99-</p>
+            </div>
+         </div>
+        <div class="filter-item all formal bk M 300">
+                <img src="black-t-shirt-model.jpg" />
+                <img class="top-image" src="black-shirt-1.jpg" />
+             <div class="product-info">
+                <p class="prod-name">I-NENG Formal</p>
+                <p class="prod-price">239-</p>
+            </div>
+        </div>
+         <div class="filter-item all og bk L 300">
+                <img src="black-sweater-1.jpg" />
+                <img class="top-image" src="black-sweater-model.jpg" />
+             <div class="product-info">
+                <p class="prod-name">I-NENG Original</p>
+                <p class="prod-price">499-</p>
+            </div>
+        </div>
+        <div class="filter-item all 23 bk S 50">
+            <img id ="clr" src="23-looneytoons.jpg" />
+         <div class="product-info">
+            <p class="prod-name">I-NENG GIVE CARD</p>
+            <div class="btn-change">
+                <button class= "loon" onclick="changeColour1()"></button>
+                <button class = "kings" onclick="changeColour2()"></button>
+                <button class = "kfc" onclick="changeColour3()"></button>
+                <button class= "minions" onclick="changeColour4()"></button>
+                <button class = "mc" onclick="changeColour5()"></button>
+                <button class = "stars" onclick="changeColour6()"></button>
+            </div>
+            <p class="clr-prod-price">FREE</p>
+         </div>
+        </div>
+        <div class="filter-item all starwars sw 2XL 300">
+            <img src="green-hoodie-1.jpg" />
+            <img class="top-image" src="green-hoodie-model-1.jpg" />
+         <div class="product-info">
+            <p class="prod-name">I-NENG Starwars</p>
+            <p class="prod-price">499-</p>
+         </div>
+        </div>
+
+        </div>
+
+<!--Collection-->
+    <p class="catagories series">Collections</p>
+    <div class="container-Collection">
+            <button type="button" class="btn-colfilter btn-filter" id="all" onclick="scroller()">All</button>
+            <button type="button" class="btn-colfilter btn-filter" id="23" onclick="scroller()">The 23</button>
+            <button type="button" class="btn-colfilter btn-filter" id="og" onclick="scroller()">Original</button>
+            <button type="button" class="btn-colfilter btn-filter" id="mini" onclick="scroller()">Miminal</button>
+            <button type="button" class="btn-colfilter btn-filter" id="joy" onclick="scroller()">Joy</button>
+            <button type="button" class="btn-colfilter btn-filter" id="sport" onclick="scroller()">Sport</button>
+            <button type="button" class="btn-colfilter btn-filter" id="formal" onclick="scroller()">Formal</button>
+            <button type="button" class="btn-colfilter btn-filter" id="starwars" onclick="scroller()">STAR WARS</button>
+    </div>
+
+<!--Color-->
+    <p class="catagories colors">Colors</p>
+      <div class="container-Color">
+        <button class= "loon btn-clrfilter btn-filter" id="bk" onclick="scroller()"></button>
+        <button class = "kings btn-clrfilter btn-filter" id="bl" onclick="scroller()"></button>
+        <button class = "kfc btn-clrfilter btn-filter" id="rd" onclick="scroller()"></button>
+        <button class= "minions btn-clrfilter btn-filter" id="yl" onclick="scroller()"></button>
+        <button class = "mc btn-clrfilter btn-filter" id="nv" onclick="scroller()"></button>
+        <button class = "stars btn-clrfilter btn-filter" id="gr" onclick="scroller()"></button>
+        <button class= "wine btn-clrfilter btn-filter" id="wine" onclick="scroller()"></button>
+        <button class = "seaweed btn-clrfilter btn-filter" id="sw" onclick="scroller()"></button>
+        <button class = "pink btn-clrfilter btn-filter" id="pk" onclick="scroller()"></button>
+      </div>
+
+<!--Size-->
+      <p class="catagories size">Sizes</p>
+      <div class="container-Size">
+        <button class= "btn-sizefilter btn-filter" id="S" onclick="scroller()">S</button>
+        <button class = "btn-sizefilter btn-filter" id="M" onclick="scroller()">M</button>
+        <button class = "btn-sizefilter btn-filter" id="L" onclick="scroller()">L</button>
+        <button class= "btn-sizefilter btn-filter" id="XL" onclick="scroller()">XL</button>
+        <button class = "btn-sizefilter btn-filter" id="2XL" onclick="scroller()">2XL</button>
+        <button class = "btn-sizefilter btn-filter" id="3XL" onclick="scroller()">3XL</button>
+      </div>
+
+<!--Pricing-->
+      <p class="catagories price">Pricing</p>
+      <div class="container-Price">
+        <button type="button" class="btn-pricefilter btn-filter" id="50" onclick="scroller()">Below 50฿</button>
+        <button type="button" class="btn-pricefilter btn-filter" id="100" onclick="scroller()">50฿-100฿</button>
+        <button type="button" class="btn-pricefilter btn-filter" id="200" onclick="scroller()">100฿-200฿</button>
+        <button type="button" class="btn-pricefilter btn-filter" id="300" onclick="scroller()">Upper 200฿</button>
+      </div>
+      <script src="clrchange.js"></script>
+    </body>
+</html>
