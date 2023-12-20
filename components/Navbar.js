@@ -46,14 +46,8 @@ export default function Nav() {
                     </Logo>
                     <SearchBar type="text" placeholder="Search" />
                     <StyledNav>
-                        <Navlink href={'/'}>
-                            MEN
-                        </Navlink>
-                        <Navlink href={'/'}>
-                            WOMEN
-                        </Navlink>
-                        <Navlink href={'/'}>
-                            AI
+                        <Navlink href={'/Allshop'}>
+                            AllShop
                         </Navlink>
                         <Navlink href={'/cart'}>
                             <Icon xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
