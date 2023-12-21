@@ -63,13 +63,13 @@ export default function Featured() {
         <h1>Best Seller</h1>
         <Wrapper>
           <div>
-            <img src="/Assets/StarWars/STARWARSLogoFront.jpg" alt="STAR WARS shirt"/>
+            <img src="/Assets/StarWars/STARWARSLogoFront.png" alt="STAR WARS shirt"/>
           </div>
           <div>
-            <img src="/Assets/StarWars/DarthVaderFront.jpg" alt="STAR WARS shirt" />
+            <img src="/Assets/StarWars/DarthVaderFront.png" alt="STAR WARS shirt" />
           </div>
           <div>
-            <img src="/Assets/StarWars/SpaceshipFront.jpg" alt="STAR WARS shirt" />
+            <img src="/Assets/StarWars/SpaceshipFront.png" alt="STAR WARS shirt" />
           </div>
         </Wrapper>
         <ButtonWrapper>
