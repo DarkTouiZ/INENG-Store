@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Center from "@/components/Center";
-import Button from "@/components/Button";
+import Center from "@/components/layout/Center";
+import Button from "@/components/ui/Button";
 
 const Bg = styled.div`
     background-color: #222;

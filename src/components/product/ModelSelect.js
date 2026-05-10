@@ -1,9 +1,10 @@
-// ModelSelect.js
 import React from 'react';
 import styled from 'styled-components';
 
 const StyledSelect = styled.select`
-  // Add your styling as needed
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 `;
 
 export default function ModelSelect({ models, selectedModel, onChange }) {

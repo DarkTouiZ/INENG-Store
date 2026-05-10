@@ -1,4 +1,4 @@
-export const product = [
+export const products = [
     {
         id: 1,
         name: 'Formal Shirt',
@@ -140,12 +140,12 @@ export const product = [
         ],
         images: {
             frontView: [
-                '/Assets/Original/inengBlueFront.png',
-                '/Assets/Original/inengGreenBack.png',
+                '/Assets/Original/InengBlueFront.png',
+                '/Assets/Original/InengGreenFront.png',
             ],
             backView: [
-                '/Assets/Original/inengBlueBack.png',
-                '/Assets/Original/inengGreenFront.png',
+                '/Assets/Original/InengBlueBack.png',
+                '/Assets/Original/InengGreenBack.png',
             ],
         },
     },

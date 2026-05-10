@@ -1,9 +1,8 @@
-// Card.js
 import React, { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import ModelSelect from "./ModelSelect";
-import { product } from "../Content/Product"; // Import your product data
+import { products } from "@/data/products";
 import Link from "next/link";
 
 const StyledCard = styled.div`
@@ -11,24 +10,21 @@ const StyledCard = styled.div`
 `;
 
 const Bg = styled.div`
-  background-color: #fff;'
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
 `;
 
-export default function Card({ productId }) {
+export default function ProductCard({ productId }) {
+  const currentProduct = products.find((p) => p.id === productId);
   const [selectedModel, setSelectedModel] = useState(
-    product[productId]?.model[0]
-  ); // Set initial model
+    currentProduct?.model[0]
+  );
 
   const handleModelChange = (model) => {
     setSelectedModel(model);
   };
 
-  // Get the product data based on productId
-  const currentProduct = product.find((p) => p.id === productId);
-
-  // Get the front view image URL based on the selected model
   const frontImageUrl = currentProduct?.images?.frontView.find((img) =>
     img.includes(selectedModel)
   );
@@ -36,7 +32,9 @@ export default function Card({ productId }) {
   return (
     <Bg>
       <StyledCard>
-        <Image src={frontImageUrl} width={300} height={300} />
+        {frontImageUrl && (
+          <Image src={frontImageUrl} width={300} height={300} alt={currentProduct?.name || "Product"} />
+        )}
         <ModelSelect
           models={currentProduct?.model}
           selectedModel={selectedModel}

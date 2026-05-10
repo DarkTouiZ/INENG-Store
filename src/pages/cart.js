@@ -1,13 +1,8 @@
-import Nav from "../../components/Navbar";
-import Center from "../../components/Center";
+import Nav from "@/components/layout/Navbar";
+import Center from "@/components/layout/Center";
 import styled from "styled-components";
-import Button from "../../components/Button";
+import Button from "@/components/ui/Button";
 import { useRouter } from 'next/router';
-
-// import Nav from "@/components/Navbar";
-// import Center from "@/components/Center";
-// import styled from "styled-components";
-// import Button from "@/components/Button";
 
 const ColumnsWrapper = styled.div`
     display: grid;

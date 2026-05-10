@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import Center from "./Center";
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-
 
 const FooterBG = styled.div`
   background-color: #000;
@@ -41,8 +38,7 @@ const FooterTopics = styled.div`
 `;
 
 const FooterTopic = styled.div`
-  /* Add styling for each topic if needed */
-  margin: bottom 20px;
+  margin-bottom: 20px;
 
   p {
     margin: 0;
@@ -56,7 +52,6 @@ const FooterSubtopics = styled.div`
 `;
 
 const FooterSubtopic = styled.div`
-  /* Add styling for each subtopic if needed */
   p {
     margin: 0;
   }

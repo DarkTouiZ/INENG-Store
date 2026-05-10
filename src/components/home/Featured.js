@@ -1,7 +1,7 @@
 import React from "react";
-import Center from "./Center";
+import Center from "@/components/layout/Center";
 import styled from "styled-components";
-import Button from "./Button";
+import Button from "@/components/ui/Button";
 import { useRouter } from 'next/router';
 
 const Bg = styled.div`

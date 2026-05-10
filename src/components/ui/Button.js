@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"; // Added import for 'css'
+import styled, { css } from "styled-components";
 
 const StyledBtn = styled.button`
     padding: 10px 20px;
